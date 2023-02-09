@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mundo Por explorar</title>
+</head>
+<body>
+
+    <!--Etiquetas-->
+
+    <h1>Headings (Ironicamente este es el hading h1)</h1>
+
+    <h2>Mi segundo heading.</h2>
+    <h3>Mi tercer heading.</h3>
+    <h4>Mi cuarto heading.</h4>
+    <h5>Mi quinto heading.</h5>
+    <h6>Mi sexto heading, y el ultimo pues no hay septimo heading en HTML.</h6>
+    
+    <hr> <!--Sirve para separar el texto, a traves de una linea-->
+
+    <!--Parrafos-->
+
+    <h1>Parrafos</h1>
+
+    <p>Este es mi primer parrafo en HTML.</p>
+    <p>Este es mi segundo parrafo en HTML.</p>
+
+    <hr>
+
+    <!--Span y Salto de lineas-->
+
+    <h1>Etiqueta Span y Saltos de linea</h1>
+
+    <p>
+        Este texto es <span style="color: red">mucho mas largo</span> y sirve para mostrar
+        el ejemplo de span en el VSCode. <!--Le añadi un poco de CSS con el style, para poder entender 
+        lo de la referencia de esta etiqueta-->
+
+        Este es un texto para mostrar el salto de linea con la etiqueta "br". <br> Hola soy la continuacion de lo anterior XD.
+        Ahora con un salto doble. <br><br> Hola, salte doble.
+    </p>
+
+    <hr>
+
+    <!--Hipervinculos-->
+
+    <h1>Etiqueta de Hipervinculos</h1>
+
+    <a href="https://www.google.cl">Ir a google</a> <br>
+    <a target="_blank" href="https://www.google.cl">Ir a google, abriendo otra pestania</a> 
+
+    <hr>
+
+    <!--Imagenes-->
+    
+    <h1>Imagenes en HTML.</h1>
+
+    <h2>Imagen desde internet.</h2>
+
+    <img src="https://i.pinimg.com/280x280_RS/5e/99/a4/5e99a4fabbfdbd7f64159b2e5eb2afbe.jpg" />
+
+    <h2>Imagen Descargada.</h2>
+
+    <img src = "img/messi.png"/>
+
+    <h2>Modificando tamano imagen anterior</h2>
+
+    <img src = "img/messi.png" width = 100 height = 100/>
+
+    <hr>
+
+    <!--Formularios-->
+
+    <h1>Formularios (interaccion con el usuario)</h1> 
+
+    <!--Puede haber mas campos en un form, pero aqui los separe XD-->
+
+    <h2>Solicitar dato sin identificador.</h2>
+
+    <form>
+        <label>Nombre: </label>
+        <input />
+    </form>
+
+    <h2>Solicitar dato con identificador.</h2>
+
+    <form>
+        <label for = "apellido">Apellido: </label>
+        <input id = "apellido"/>
+    </form>
+
+    <br>La diferencia se nota cuando apretamos el dato y no el campo de texto.
+
+    <h2>Valor por defecto</h2>
+
+    <form>
+        <label for = "apellido">Apellido: </label>
+        <input value= "XD" id = "apellido"/>
+    </form>
+
+    <h2>Propiedad name.</h2>
+
+    <form>
+        <label for = "apellido">Apellido: </label>
+        <input id = "apellido" name = "nombre" /> <!--Ahora se guardara lo del campo en nombre-->
+    </form>
+
+    <h2>Propiedad placeholder</h2>
+
+    <form>
+        <label for = "rut">Rut (sin digito identificador): </label>
+        <input id = "rut" name = "rut" placeholder = "20728917"/>
+    </form>
+
+    <h2>Propiedad Type</h2>
+
+    Es una propiedad del input, que por defecto trae text. Pero hay algunas mas
+    comunes:
+
+    <h3>Email</h3>
+
+    <form>
+        <label for = "email">Email: </label>
+        <input type= "email" id = "email" name = "email" placeholder = "juan@gmail.com"/> 
+    </form>
+
+    <h4>Password</h4>
+
+    <form>
+        <label for = "contrasena">Email: </label>
+        <input type= "password" id = "contrasena" name = "contrasena" placeholder = "1234"/> 
+    </form>
+
+    <h4>Radio o Checkbox</h4>
+
+    <form>
+        <label>Boton de radio: </label>
+        <input type= "radio" name = "radio"/> 
+    </form>
+
+    <form>
+        <label>Boton de radio: </label>
+        <input type= "checkbox" name = "check"/> 
+    </form>
+    
+    <h4>Archivo</h4>
+
+    <form>
+        <label>Seleccionar un archivo: </label>
+        <input type= "file" name = "archivo"/> 
+    </form>
+
+    <h4>Boton</h4>
+
+    <form>
+        <label>Boton: </label>
+        <input type= "submit" name = "boton"/> 
+    </form>
+
+    <h2>Etiqueta textarea.</h2>
+
+    Util para ingresar un comentario. <br><br>
+    <label for = "comentario1">Comentario: </label><br>
+    <textarea id = "comentario1" placeholder = "ingrese comentario" name = "comentario"></textarea>
+
+    <h3>Valor por defecto</h3>
+
+    <label for = "comentario0">Comentario: </label> <br>
+    <textarea cols = "50" rows = "10" id = "comentario0" placeholder = "ingrese comentario" name = "comentario0">
+        Este es un valor por defecto
+    </textarea>
+
+    <h3>Redimensionar la cajita (cols = columnas, rows = filas).</h3>
+
+    <label for = "comentario2">Comentario: </label> <br>
+    <textarea cols = "50" rows = "10" id = "comentario2" placeholder = "ingrese comentario" name = "comentario"></textarea>
+    <br>
+    <input type = "submit"/>
+    
+    <h2>Indicar donde enviar los datos del formulario.</h2>
+
+    Esto se hace dentro de la etiqueta de form, con la propiedad de action la cual
+    indica la ruta a la cual nos rediccionaremos, luego el metodo con method, con el 
+    cual enviaremos los datos a nuestro servidor, aqui tenemos GET y POST que son dos
+    formas distintas de enviar los datos. Con GET los datos aparecen en la URL y con
+    POST los podemos ver atraves de un inspeccionar en la pagina web. <br><br>
+
+    <form action="/formulario" method = "GET"> <!--Aqui si tenemos nuestro servidor con php se coloca .php -->
+        <label for = "nombre">Nombre: </label><br>
+        <textarea id = "comentario3" placeholder = "ingrese comentario" name = "comentario3"></textarea>
+        <input type= "submit" id = "nombre" name = "nombre" placeholder = "seba"/> 
+    </form>
+
+    <!--Botones-->
+    
+    <hr>
+    <h1>Botones</h1>
+
+    <h2>Boton de tipo button.</h2>
+
+    Es un boton de enviar un formulario simplemente y su comportamiento se establece
+    con javascript. Por eso aqui no hace nada. Tiene ventajas que pueden anadirse mas 
+    etiquetas dentro. Es mas personalizable.
+
+    <form action="/formulario" method = "GET"> <!--Aqui si tenemos nuestro servidor con php se coloca .php -->
+        <label for = "nombre">Nombre: </label><br>
+        <textarea cols = "50" rows = "10" id = "comentario3" placeholder = "ingrese comentario" name = "comentario3"></textarea>
+        <button type = "button">Enviar</button> 
+    </form>
+
+
+    <h2>Boton de tipo reset</h2>
+
+    Este deja el formulario con los valores que tenia inicialmente.
+
+    <form action="/formulario" method = "GET"> <!--Aqui si tenemos nuestro servidor con php se coloca .php -->
+        <label for = "nombre">Nombre: </label><br>
+        <textarea cols = "50" rows = "10" id = "comentario3" placeholder = "ingrese comentario" name = "comentario3"></textarea>
+        <button type = "reset">Enviar</button> 
+    </form>
+
+    <h2>Boton de tipo submit</h2>
+
+    Este es el boton por defecto dentro de una etiqueta form. Y envia nuestro formulario
+    a traves de la ruta de action junto con el metodo que hayamos indicado.
+
+    <form action="/formulario" method = "GET"> <!--Aqui si tenemos nuestro servidor con php se coloca .php -->
+        <label for = "nombre">Nombre: </label><br>
+        <textarea cols = "50" rows = "10" id = "comentario3" placeholder = "ingrese comentario" name = "comentario3"></textarea>
+        <button type = "submit">Enviar</button> 
+    </form>
+
+    <!--Listas-->
+
+    <hr>
+
+    <h1>Listas</h1>
+
+    <h2>Lista no ordenada.</h2>
+
+    <ul> <!--Es una lista no ordenada-->
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+
+    <h2>Lista ordenada.</h2>
+
+    <ol> <!--Es una lista ordenada-->
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+    </ol>
+
+    Tambien se pueden modificar el numero inicial.
+
+    <ol> <!--Es una lista ordenada-->
+        <li value = 20>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ol>
+
+    <h2>Anidar listas</h2>
+
+    <ol> 
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+
+        <ol>
+            <li style= "list-style-type:lower-alpha;">Sub elemento 1</li> <!--Cambiar el valor inicial, a letras minusculas. Con Ctrl+space, nos salen las distintas opciones-->
+            <li>Sub elemento 2</li>
+            <li>Sub elemento 3</li>
+        </ol>
+
+        <ul>
+            <li>Sub elemento 4</li>
+            <li>Sub elemento 5</li>
+            <li>Sub elemento 6</li>
+        </ul>
+    </ol>
+
+    <hr>
+
+    <!--Tablas-->
+
+    <h1>Tablas</h1>
+
+    <table>
+        <tr> <!--Indica una fila dentro de nuestra tabla. Table row-->
+            <th>Precio</th> <!--Dentro de esta etiqueta puede ir la etiqueta <th>, para indicar que lo que vaya dentro de tr es una cabecera.-->
+            <th>Producto</th>    
+        </tr> 
+        <tr>
+            <td>Hola</td> <!--Sirve para definir elementos estandares que se encuentran dentros de las celdas de nuestra tabla-->
+            <td>Gratis</td> <!--Cada uno con respecto a la cabecera. th.-->
+        </tr>
+    </table>
+
+    <h2>Propiedad para demarcar la tabla.</h2>
+
+    <table style = "border: 1px solid black;">
+        <tr> <!--Indica una fila dentro de nuestra tabla. Table row-->
+            <th>Precio</th> <!--Dentro de esta etiqueta puede ir la etiqueta <th>, para indicar que lo que vaya dentro de tr es una cabecera.-->
+            <th>Producto</th>    
+        </tr> 
+        <tr>
+            <td>Hola</td> <!--Sirve para definir elementos estandares que se encuentran dentros de las celdas de nuestra tabla-->
+            <td>Gratis</td> <!--Cada uno con respecto a la cabecera. th.-->
+        </tr>
+    </table>
+
+    El resto de propiedades para que quede mas bonita utiliza CSS, y aun no se usarlo XD.
+    ME FALTO VER COSAS CON RESPECTO A LAS TABLAS.
+
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+    <!--Etiqueta de header -->
+     
+    <!--Se utiliza para agrupar links o logos de nuestra pagina. Se pueden crear muchas siempre y
+    cuando no se cree una dentro de otra, o dentro de un footer. Titulo en general.-->
+
+    <header>
+        <h1 id = "titulo">Blog del SebaXD</h1> <!--id: 
+        necesario para interectuar con el elemento a traves de jss o hacerle un estilo.
+        Idealmente solo se coloca una vez, por buena practica-->
+    </header>
+
+    <!--Etiqueta div-->
+
+    <!--No cambia como se muestra el contenido, si no que lo contiene. Tiene la misma funci 
+    onalidad que la etiqueta de section. Sirve para dividir nuestro contenido y agruparlo
+    en secciones. Antes era muy utilizado (antes de section). Se puede agrupar con mas div
+    -->
+
+    <div> 
+        <p>Soy un parrafo dentro de un div.</p>
+    </div>
+
+
+    <!--Etiqueta section-->
+
+    <!--Va entre el header y el footer. Crea secciones de nuestra aplicacion, aqui pueden ir las
+    etiquetas que nosotros queramos.-->
+
+    <!--class = Se utiliza para identificar mas de un elemento, que potencialmente se 
+    utilizara con css o jss-->
+
+    <section>
+        <article class = "post"> <!--Se utiliza para definir contenido completamente independiente. ejem = post, tweet, imagen, etc.-->
+            <h2>Titulo de mi post</h2>
+            <p>Descripcion de mi post</p>
+            <img src = "img/messi.png"/>
+            <p>Texto del articulo que hay aca y es texto de prueba, chanchito feliz.</p>
+        </article>
+        <article class = "post"> 
+            <h2>Titulo de mi post 2</h2>
+            <p>Descripcion de mi post 2</p>
+            <img src = "https://i.pinimg.com/280x280_RS/5e/99/a4/5e99a4fabbfdbd7f64159b2e5eb2afbe.jpg"/>
+            <p>Texto del articulo que hay aca y es texto de prueba, chanchito feliz.</p>
+        </article>
+    </section>
+
+    <!--Etiquta de footer-->
+
+    <!--Se utiliza para colocar el pie de pagina, de nuestra pagina. Puede haber muchos footer y 
+    por lo general contiene cosas como el copyright, informacion de contacto, informacion del
+    sitio, links para volver al sitio web, informacion del autor, etc.-->
+
+    <footer>
+        <a href="#titulo">Ir al titulo, o mas bien arriba</a> <!--De esta forma podemos 
+        movernos por nuestra pagina web, sin necesidad de scroll-->
+        <br>
+        <a href="mailto:sebastian.s.polanco@hotmail.com">Contactame aqui.</a>
+        <p>Copyright 2022.</p>
+
+    </footer>
+
+
+
+
+
+
+</body>
+</html>
